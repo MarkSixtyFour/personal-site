@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!-- Tell the browser the type of document = HTML5 -->
+
+<!-- Language attribute helps with screen readers and search engines. -->
+<html lang="en-US">
+
+<head> <!-- Our metadata goes here -->
+	<%- include('partials/metadata') %>
+
+    <meta name="description" content="Personal site project: Code">
+    <title>Nick's Numerous Hobbies - Programming</title>
+</head>
+
+<body>
+	<%- include('partials/navbar') %>
+	
+	<main>
+    	<!-- Page subject -->
+		<div class="jumbotron text-center text-light bg-dark sharpener">
+			<h1 class="display-3">Computer Programming</h1>
+			<p>...is far superior with an obnoxiously loud mechanical keyboard</p>
+		</div>
+
+    	<!-- Page description -->
+    	<div class="container">
+        	<h2>Here's a few projects of mine</h2>
+        	<p>Below are some projects I'm working on, all of which can be found on <a href="https://github.com/c-Vui">my GitHub profile</a>.</p>
+    	</div>
+	
+		<!-- Projects -->
+		<div class="container">
+			<h3><a href="https://github.com/c-Vui/suod">suod - Insults you for typing <code>sudo</code> wrong <em>and</em> corrects you</a></h3>
+			<p>
+				Have you ever needed to type a long, long command on Linux that required you to type <code>sudo</code> but you couldn't even do that correctly? Thankfully, suod saves your arrow keys and corrects you.
+			</p>
+		
+			<h3><a href="https://github.com/c-Vui/quizbot-demo">Quiz Bot Demo</a> <span class="badge badge-warning">WIP</span></h3>
+			<p>
+				This is a simple quiz bot for Discord made for CIT412: Computer Simulation Applications. It doesn't have full functionality yet, but it does what it was required for the live demonstration done in class.
+			</p>
+			
+			<h3><a href="https://github.com/c-Vui/student-site-project">This website</a></h3>
+			<p>
+				This website is on GitHub!
+			</p>
+		</div>
+	</main>
+	
+	<%- include('partials/footer') %>
+    
+    <!-- Bootstrap JS libraries: jQuery, Popper, their Javascript. Order matters here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

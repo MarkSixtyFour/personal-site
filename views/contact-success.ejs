@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en_US">
+
+<head>
+	<%- include('partials/metadata') %>
+	
+	<meta name="description" content="Personal Site Project: Contact Successful">
+	<title>Nick's Numerous Hobbies - Success!</title>
+</head>
+
+<body>
+	<%- include('partials/navbar') %>
+	
+	<main>
+		<div class="jumbotron text-center sharpener">
+			<h1 class="display-3">Success!</h1>
+			<p>Your contact form has been submitted.</p>
+		</div>
+		<div class="container">
+			<p>Your email: <%= email %></p>
+			<p>Your subject: <%= subject %></p>
+			<p>Your message: <%= message %></p>
+		</div>
+	</main>
+	
+	<%- include('partials/footer') %>
+	
+	<!-- Bootstrap JS libraries: jQuery, Popper, their Javascript. Order matters here -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+	
+</html>

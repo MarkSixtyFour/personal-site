@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- Tell the browser the type of document = HTML5 -->
+
+<!-- Language attribute helps with screen readers and search engines. -->
+<html lang="en-US">
+
+<head> <!-- Metadata goes here -->
+	<%- include('partials/metadata') %>
+	
+    <meta name="description" content="Personal site project: About">
+    <title>Nick's Numerous Hobbies - About and Contact</title>
+</head>
+
+<body>
+	<%- include('partials/navbar') %>
+	
+	<main>
+    	<!-- Page header -->
+    	<div class="jumbotron text-center text-light bg-success sharpener">
+    		<h1 class="display-3">About and Contact</h1>
+    		<p>If you really need to say something to me.</p>
+		</div>
+
+    	<div class="container">
+        	<!-- About me card -->
+        	<div class="card mx-auto d-block" id="profile-card">
+            	<img class="card-img-top" src="http://via.placeholder.com/640x640" alt="Card image">
+            	<div class="card-body">
+                	<h4 class="card-title">Nick N.</h4>
+                	<p class="card-text">Game and Simulation Programming student at [redacted] with a lot of hobbies.</p>
+            	</div>
+        	</div>
+    	</div>
+
+    	<div class="container">
+        	<!-- Contact form - doesn't do anything with the data yet-->
+        	<h2>Contact</h2>
+        	<form class="needs-validation pb-3" action="contact" method="POST">
+            	<div class="form-group">
+                	<label for="email">Your Email</label>
+                	<input type="email" class="form-control" placeholder="somebody@example.com" name="email" required>
+            	</div>
+				
+				<div class="form-group">
+                	<label for="password">Your Password</label>
+                	<input type="Password" class="form-control" placeholder="********" name="password" required>
+            	</div>
+
+            	<div class="needs-validation pb-3">
+                	<label for="subject">Subject</label>
+                	<input type="text" class="form-control" placeholder="Example: You're Epic" name="subject" required>
+            	</div>
+
+            	<div class="needs-validation pb-3">
+                	<label for="message">Message</label>
+                	<textarea class="form-control" placeholder="Sample Text" name="message" required></textarea>
+            	</div>
+
+            	<div class="form-check pb-3">
+                	<label class="form-check-label">
+                    	<input type="checkbox" class="form-check-input" name="" value="" required>I agree to the <a class="btn-link" data-toggle="modal" data-target="#termsOfService">Terms of Service</a>
+                	</label>
+            	</div>
+
+            	<button type="submit" class="btn btn-primary" id="submit">Submit</button>
+        	</form>
+
+        	<!-- ToS Modal -->
+        	<div class="modal fade" id="termsOfService">
+            	<div class="modal-dialog modal-lg">
+                	<div class="modal-content">
+                    	<!-- Header -->
+                    	<div class="modal-header">
+                        	<h4 class="modal-title">Terms of Service</h4>
+                        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+                    	</div>
+
+                    	<!-- Body -->
+                    	<div class="modal-body">
+                        	<p><strong>THIS IS NOT A LEGALLY BINDING AGREEMENT BETWEEN YOU AND NICK N. ("His Dark Voraciousness") REGARDING THE USE OF THIS WEBSITE.</strong></p>
+                        	<p>I. <u>Forfeit of Soul or First-Born to Eevee</u></p>
+                        	<p>By using this site, you agree to the forfeit of your:</p>
+                        	<ol>
+                            	<li>soul, or</li>
+                            	<li>first-born child</li>
+                        	</ol>
+                        	<p>to Eevee, or at His Dark Voraciousness' discretion, both. Failure to comply will result in being publicly gamed on.</p>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</div>
+	</main>
+	
+	<%- include('partials/footer') %>
+
+    <!-- Bootstrap JS libraries: jQuery, Popper, their Javascript. Order matters here -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

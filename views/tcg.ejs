@@ -1,0 +1,86 @@
+<!DOCTYPE html> <!-- Tell the browser the type of document = HTML5 -->
+
+<!-- Language attribute helps with screen readers and search engines. -->
+<html lang="en-US">
+
+<head> <!-- Metadata goes here -->
+	<%- include('partials/metadata') %>
+
+    <meta name="description" content="Personal site project: Trading Cards">
+    <title>Nick's Numerous Hobbies - TCG Collecting</title>
+</head>
+
+<body>
+	<%- include('partials/navbar') %>
+	
+	<main>
+		<!-- Page subject -->
+    	<div class="jumbotron text-center text-light bg-primary sharpener">
+    		<h1 class="display-3">Trading Card Collection</h1>
+    		<p>And I still don't have anything worthy of a CGC Pristine 10 <span class="badge badge-light">So true!</span></p>
+		</div>
+		
+    	<!-- Page description -->
+    	<div class="container">
+    		<h2>These are my graded Pokémon TCG slabs</h2>
+        	<p>...and some I sold. Here are details about my cards, and eBay listings if present.</p>
+    	</div>
+		
+	<div class="container">
+		<div class="table-responsive">
+        	<table class="table table-striped">
+            	<thead>
+                	<tr>
+                    	<th scope="col">Name</th>
+                    	<th scope="col">Grade</th>
+                    	<th scope="col">Certification #</th>
+                    	<th scope="col">Listing</th>
+                	</tr>
+            	</thead>
+            	<tbody>
+                	<tr>
+                    	<td>Bea</td>
+                    	<td>9</td>
+                    	<td><a href="https://www.cgccomics.com/certlookup/3784917001/">3784917001</a></td>
+                    	<td><a href="#">[redacted]</a> (Sold)</td>
+                	</tr>
+                	<tr>
+                    	<td>Enhanced Hammer (Secret Rare)</td>
+                    	<td>9</td>
+                    	<td><a href="https://www.cgccomics.com/certlookup/3784917002/">3784917002</a></td>
+                    	<td>Personal Collection</td>
+                	</tr>
+                	<tr>
+                    	<td>Jirachi</td>
+                    	<td>9</td>
+                    	<td><a href="https://www.cgccomics.com/certlookup/3784917003/">3784917003</a></td>
+                    	<td><a href="#">[redacted]</a> (Sold)</td>
+                	</tr>
+                	<tr>
+                    	<td>Bea (Secret Rare)</td>
+                    	<td>9.5</td>
+                    	<td><a href="https://www.cgccomics.com/certlookup/3784917004/">3784917004</a></td>
+                	    <td><a href="#">[redacted]</a> (Sold)</td>
+                	</tr>
+					<tr>
+						<td>Eevee VMAX</td>
+						<td>9.5</td>
+						<td><a href="https://www.cgccomics.com/certlookup/3820963001/">3820963001</a></td>
+						<td>Personal Collection</td>
+					</tr>
+            	</tbody>
+      		</table>
+    	</div>
+	</div>
+    	
+	</main>
+	
+	<%- include('partials/footer') %>
+
+    <!-- Bootstrap JS libraries: jQuery, Popper, their Javascript. Order matters here -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

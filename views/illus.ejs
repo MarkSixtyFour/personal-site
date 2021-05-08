@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- Tell the browser the type of document = HTML5 -->
+
+<!-- Language attribute helps with screen readers and search engines. -->
+<html lang="en-US">
+
+<head> <!-- Metadata goes here -->
+	<%- include('partials/metadata') %>
+
+	<meta name="description" content="Personal site project: Digital Illustration">
+	<title>Nick's Numerous Hobbies - Illustration</title>
+</head>
+
+<body>
+	<%- include('partials/navbar') %>
+	
+	<main>
+		<!-- Page subject -->
+		<div class="jumbotron text-center text-light bg-danger sharpener">
+			<h1 class="display-3">Digital Illustration</h1>
+			<p>Do you like, only draw Pokémon? <span class="badge badge-light">Basically</span></p>
+		</div>
+
+		<!-- Page description -->
+		<div class="container">
+			<h2>Things I drew for fun!</h2>
+			<p>...but still spent too much time on. If you can't tell, I like Eevee.</p>
+		</div>
+
+		<!-- Artwork -->
+		<div class="container">
+			<img src="http://via.placeholder.com/640x360" class="img-fluid rounded" alt="Eevee emotes I made for Discord">
+			<img src="http://via.placeholder.com/640x360" class="img-fluid rounded mt-3" alt="Eevee pretending to be a plane">
+			<img src="http://via.placeholder.com/640x360" class="img-fluid rounded mt-3 mb-3" alt="Kitchen warrior Eevee">
+		</div>
+	</main>
+	
+	<%- include('partials/footer') %>
+
+	<!-- Bootstrap JS libraries: jQuery, Popper, their Javascript. Order matters here -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

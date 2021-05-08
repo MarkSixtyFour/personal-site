@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Tell the browser the type of document = HTML5 -->
+
+<!-- Language attribute helps with screen readers and search engines. -->
+<html lang="en-US">
+
+<head>	<!-- Metadata goes here -->
+	<%- include('partials/metadata') %>
+	
+	<meta name="description" content="Personal site project: Home">
+	<title>Nick's Numerous Hobbies - Home</title>
+</head>
+
+<body>
+	<%- include('partials/navbar') %>
+	
+	<main>
+		<!-- Page subject -->
+		<div class="jumbotron text-center text-light bg-info sharpener">
+			<h1 class="display-3">Nick's Numerous Hobbies</h1>
+			<p>Press <kbd>Alt + F4</kbd> to die instantly</p>
+		</div>
+
+		<!-- Page description -->
+		<div class="container">
+			<h2>What?</h2>
+			<p>This is a site for a few of my hobbies. You can use the navbar to browse them. Each has its own page and description.</p>
+
+			<h2>Why, though?</h2>
+			<p>Because I want something flashier than a blog, that's why.</p>
+		</div>
+	</main>
+
+	<%- include('partials/footer') %>
+	
+	<!-- Bootstrap JS libraries: jQuery, Popper, their Javascript. Order matters here -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

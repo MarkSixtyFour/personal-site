@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <%- include('partials/metadata') %>
+
+    <meta name="description" content="Page not found">
+    <title>Error - Page Not Found</title>
+</head>
+
+<body>
+	<%- include('partials/navbar') %>
+	
+	<main>
+    	<div class="container">
+        	<div class="jumbotron text-center sharpener">
+            	<h1><%= remark %></h1>
+            	<p>Page not found.</p>
+        	</div>
+		</div>
+			
+        <div class="container text-center">
+            <a class="btn-link" href="/">Return to the home page</a>
+        </div>
+	</main>
+
+    <%- include('partials/footer') %>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

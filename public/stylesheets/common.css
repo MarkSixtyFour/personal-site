@@ -1,0 +1,12 @@
+#logo {
+	width: 25px;
+}
+
+#profile-card {
+	width: 400px;
+}
+
+/* Remove rounded corners */
+.sharpener {
+	border-radius: 0;
+}
